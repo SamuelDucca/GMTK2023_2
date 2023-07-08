@@ -21122,7 +21122,7 @@ Transform:
   m_Children:
   - {fileID: 5457770494345952656}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &6148634012923407122
 Grid:
@@ -21175,6 +21175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60550a8c2c796334baba159dc6468b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallSpeed: 30
+  logic: {fileID: 0}
+  fallSpeed: 20
   moveSpeed: 10
   deadZone: 50

@@ -8,6 +8,8 @@ public class scriptLogicManager : MonoBehaviour
 {
 
     public bool isAlive = true;
+    public float gameSpeed = 15;
+    public float maxGameSpeed = 30;
 
     public GameObject gameOverScreen;
     public float playerScore;
@@ -29,9 +31,20 @@ public class scriptLogicManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void SetAliveState(bool state)
+    public void ManageGameSpeed()
     {
-        isAlive = state;
+        if (playerScore > 200)
+        {
+            gameSpeed = 20;
+        }
+        if (playerScore > 500)
+        {
+            gameSpeed = 25;
+        }
+        if (playerScore > 1000)
+        {
+            gameSpeed = 30;
+        }
     }
 
     public void GameOver()
@@ -51,6 +64,8 @@ public class scriptLogicManager : MonoBehaviour
         currentUpdate = Random.Range(minUpdate, maxUpdate);
         timer = 0;
         }
+
+        ManageGameSpeed();
 
     }
 }

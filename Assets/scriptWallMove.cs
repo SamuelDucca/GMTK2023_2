@@ -7,7 +7,7 @@ public class scriptWallMove : MonoBehaviour
 
     public scriptLogicManager logic;
 
-    public float fallSpeed = 10;
+    private float fallSpeed = 10;
     public float moveSpeed = 5;
     public float deadZone = 50;
     Vector3 centerPosition;
@@ -19,11 +19,13 @@ public class scriptWallMove : MonoBehaviour
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<scriptLogicManager>();
         centerPosition = transform.position;
+        fallSpeed = logic.gameSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
+        fallSpeed = logic.gameSpeed;
         if (logic.isAlive)
         {
             transform.position = transform.position + (Vector3.up * fallSpeed) * Time.deltaTime;

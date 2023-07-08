@@ -325,6 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAlive: 1
+  gameSpeed: 15
   gameOverScreen: {fileID: 587943484895665670}
   playerScore: 0
   scoreMultiplier: 10
@@ -822,10 +823,18 @@ PrefabInstance:
       propertyPath: wall
       value: 
       objectReference: {fileID: 1824254792007489913}
+    - target: {fileID: 681031102255159895, guid: 5ee0b0b1605ba6345888c4938662425d, type: 3}
+      propertyPath: speedAttenuation
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1644641626186689340, guid: 5ee0b0b1605ba6345888c4938662425d, type: 3}
       propertyPath: wall
       value: 
       objectReference: {fileID: 1824254792007489913}
+    - target: {fileID: 1644641626186689340, guid: 5ee0b0b1605ba6345888c4938662425d, type: 3}
+      propertyPath: speedAttenuation
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2820471180462773778, guid: 5ee0b0b1605ba6345888c4938662425d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -874,10 +883,18 @@ PrefabInstance:
       propertyPath: wall
       value: 
       objectReference: {fileID: 1824254792007489913}
+    - target: {fileID: 3542769465776893752, guid: 5ee0b0b1605ba6345888c4938662425d, type: 3}
+      propertyPath: speedAttenuation
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3755507345844077363, guid: 5ee0b0b1605ba6345888c4938662425d, type: 3}
       propertyPath: wall
       value: 
       objectReference: {fileID: 1824254792007489913}
+    - target: {fileID: 3755507345844077363, guid: 5ee0b0b1605ba6345888c4938662425d, type: 3}
+      propertyPath: speedAttenuation
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8835061888439870806, guid: 5ee0b0b1605ba6345888c4938662425d, type: 3}
       propertyPath: m_Name
       value: Parallax

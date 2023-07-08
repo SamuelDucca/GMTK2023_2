@@ -7,7 +7,8 @@ public class scriptParallax : MonoBehaviour
 
     public scriptLogicManager logic;
 
-    [SerializeField] float moveSpeed;
+    private float moveSpeed = 1f;
+    [SerializeField] float speedAttenuation = 1f;
     [SerializeField] bool scrollDown;
 
     float singleTextureHeight;
@@ -22,6 +23,9 @@ public class scriptParallax : MonoBehaviour
         SetupTexture();
         if(scrollDown) { moveSpeed = -moveSpeed; }
         wall = GameObject.FindWithTag("RightWall");
+
+        //Set game speed
+        moveSpeed = logic.gameSpeed/speedAttenuation;
     }
     void SetupTexture() 
     { 
@@ -55,6 +59,9 @@ public class scriptParallax : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Set game speed
+        moveSpeed = logic.gameSpeed/speedAttenuation;
+
         if (logic.isAlive)
         {
             Scroll();
