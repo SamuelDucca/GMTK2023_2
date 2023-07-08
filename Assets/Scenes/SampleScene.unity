@@ -270,6 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 571597669}
   - component: {fileID: 571597670}
+  - component: {fileID: 571597671}
   m_Layer: 0
   m_Name: WallSpawner
   m_TagString: Untagged
@@ -285,7 +286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571597668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.63, y: 4.66, z: 0}
+  m_LocalPosition: {x: -1.63, y: 4.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -337,6 +338,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.43, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &571597671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571597668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29634e212cf0aa2419550ad663ca3c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallToSpawn: {fileID: 1628054558026830994, guid: 5c8b5915f0271e849b68f6144f52897f, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,8 +627,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 881980840}
   - {fileID: 571597669}
+  - {fileID: 881980840}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

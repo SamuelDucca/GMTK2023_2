@@ -8,6 +8,8 @@ public class scriptWallMove : MonoBehaviour
     public float moveSpeed = 2;
     Vector3 centerPosition;
     float maxMovementWidth = 3;
+
+    //CenterPosition reference was causing bad stuff on spawns, decided to cut back to zero
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +23,11 @@ public class scriptWallMove : MonoBehaviour
         
         // Only allows movement inside boundaries
 
-        if (Input.GetKey(KeyCode.A) && (transform.position.x > (centerPosition.x - maxMovementWidth))) 
+        if (Input.GetKey(KeyCode.A) && (transform.position.x > (0 - maxMovementWidth))) 
         {
             transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.D) && (transform.position.x < (centerPosition.x + maxMovementWidth)))
+        if (Input.GetKey(KeyCode.D) && (transform.position.x < (0 + maxMovementWidth)))
         {
             transform.position = transform.position + (Vector3.right * moveSpeed) * Time.deltaTime;
         }
