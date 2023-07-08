@@ -32,7 +32,7 @@ Transform:
   - {fileID: 7133973388724011765}
   - {fileID: 6516233254401647945}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6901915003097654909
 GameObject:
@@ -146,6 +146,10 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7747660873896545865, guid: 34974c22b7cb94040bdc6491295990cf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7747660873896545865, guid: 34974c22b7cb94040bdc6491295990cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -253,7 +257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9193035921714064222, guid: 38b831b9a3ea118488ec36ce1f8c54a1, type: 3}
       propertyPath: m_Name
-      value: WallSectionTest
+      value: WallSection
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

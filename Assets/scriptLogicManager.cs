@@ -55,17 +55,20 @@ public class scriptLogicManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerScore += Time.deltaTime * scoreMultiplier;
-        timer += Time.deltaTime;
-
-        if (timer > currentUpdate)
+        if (isAlive)
         {
-        UpdateScoreText();
-        currentUpdate = Random.Range(minUpdate, maxUpdate);
-        timer = 0;
-        }
+            playerScore += Time.deltaTime * scoreMultiplier;
+            timer += Time.deltaTime;
 
-        ManageGameSpeed();
+            if (timer > currentUpdate)
+            {
+                UpdateScoreText();
+                currentUpdate = Random.Range(minUpdate, maxUpdate);
+                timer = 0;
+            }
+
+            ManageGameSpeed();
+        }
 
     }
 }
