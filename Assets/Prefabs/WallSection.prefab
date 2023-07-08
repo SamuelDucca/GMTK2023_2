@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 4130778957519901628}
   - component: {fileID: 6054545129372775798}
   m_Layer: 0
-  m_Name: WallSectionTest
+  m_Name: WallSection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

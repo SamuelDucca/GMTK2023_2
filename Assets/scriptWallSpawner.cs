@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class scriptWallSpawner : MonoBehaviour
 {
-    public GameObject wallToSpawn;
+    public GameObject wallToSpawn1, wallToSpawn2, wallToSpawn3, wallToSpawn4;
     public float spawnPositionY = -25;
     private GameObject currentWall;
+    private int spawnCounter = 0;
+    private int maxSpawn = 3;
+    private List<GameObject> spawnList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        spawnList.Add(wallToSpawn1);
+        spawnList.Add(wallToSpawn2);
+        spawnList.Add(wallToSpawn3);
+        spawnList.Add(wallToSpawn4);
     }
 
     // Update is called once per frame
@@ -32,8 +38,14 @@ public class scriptWallSpawner : MonoBehaviour
             Vector3 spawnPosition = currentWall.transform.position;
             spawnPosition.y = spawnPositionY;
 
+            if (spawnCounter > maxSpawn)
+            {
+                spawnCounter = 0;
+            }
+
             // Spawn a new wall in the same horizontal position as the current one, but just below the camera
-            Instantiate(wallToSpawn, spawnPosition, currentWall.transform.rotation);
+            Instantiate(spawnList[spawnCounter], spawnPosition, currentWall.transform.rotation);
+            spawnCounter++;
         }
 
 
