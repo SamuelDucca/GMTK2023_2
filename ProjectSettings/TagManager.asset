@@ -39,8 +39,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BG
+  - name: BG_Sky
     uniqueID: 573782327
+    locked: 0
+  - name: BG_3
+    uniqueID: 3639591359
+    locked: 0
+  - name: BG_2
+    uniqueID: 2686690669
+    locked: 0
+  - name: BG_1
+    uniqueID: 3628129653
     locked: 0
   - name: Default
     uniqueID: 0

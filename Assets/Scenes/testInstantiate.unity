@@ -135,10 +135,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1824254792007489913, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
-      propertyPath: m_Name
-      value: WallSection
-      objectReference: {fileID: 0}
     - target: {fileID: 4435475118344473155, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: m_RootOrder
       value: 0
