@@ -123,7 +123,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29634e212cf0aa2419550ad663ca3c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallToSpawn: {fileID: 9193035921714064222, guid: 38b831b9a3ea118488ec36ce1f8c54a1, type: 3}
+  wallToSpawn1: {fileID: 8885262102328827170, guid: fc473b871dbb3244cb0773f94caf7cab, type: 3}
+  wallToSpawn2: {fileID: 8014491868609613755, guid: bdd235d3256d22b4bb6ad34b6af53f58, type: 3}
+  wallToSpawn3: {fileID: 4058555856048512649, guid: 76534a525bdb7924581556f75100c68f, type: 3}
+  wallToSpawn4: {fileID: 642955128487145842, guid: 78a3a718a14211c42a25ed5fd8cb9f5c, type: 3}
   spawnPositionY: -26
 --- !u!1001 &6698971803113157941
 PrefabInstance:
