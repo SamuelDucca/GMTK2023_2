@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class scriptParallax : MonoBehaviour
 {
+
+    public scriptLogicManager logic;
+
     [SerializeField] float moveSpeed;
     [SerializeField] bool scrollDown;
 
@@ -15,6 +18,7 @@ public class scriptParallax : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<scriptLogicManager>();
         SetupTexture();
         if(scrollDown) { moveSpeed = -moveSpeed; }
         wall = GameObject.FindWithTag("RightWall");
@@ -51,7 +55,11 @@ public class scriptParallax : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Scroll();
-        CheckReset();
+        if (logic.isAlive)
+        {
+            Scroll();
+            CheckReset();
+        }
+
     }
 }
