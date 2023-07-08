@@ -5,6 +5,7 @@ using UnityEngine;
 public class scriptWallSpawner : MonoBehaviour
 {
     public GameObject wallToSpawn;
+    public float spawnPositionY = -25;
     private GameObject currentWall;
 
     // Start is called before the first frame update
@@ -29,7 +30,7 @@ public class scriptWallSpawner : MonoBehaviour
             currentWall = collision.gameObject.transform.parent.gameObject;
 
             Vector3 spawnPosition = currentWall.transform.position;
-            spawnPosition.y = -10;
+            spawnPosition.y = spawnPositionY;
 
             // Spawn a new wall in the same horizontal position as the current one, but just below the camera
             Instantiate(wallToSpawn, spawnPosition, currentWall.transform.rotation);

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class scriptWallMove : MonoBehaviour
 {
-    public float fallSpeed = 2;
-    public float moveSpeed = 2;
+    public float fallSpeed = 10;
+    public float moveSpeed = 5;
+    public float deadZone = 50;
     Vector3 centerPosition;
-    float maxMovementWidth = 3;
+    float maxMovementWidth = 6;
 
     //CenterPosition reference was causing bad stuff on spawns, decided to cut back to zero
     // Start is called before the first frame update
@@ -30,6 +31,12 @@ public class scriptWallMove : MonoBehaviour
         if (Input.GetKey(KeyCode.D) && (transform.position.x < (0 + maxMovementWidth)))
         {
             transform.position = transform.position + (Vector3.right * moveSpeed) * Time.deltaTime;
+        }
+
+        // Delete if out of screen
+        if (transform.position.y > deadZone) 
+        {
+            Destroy(gameObject);
         }
     }
 }
