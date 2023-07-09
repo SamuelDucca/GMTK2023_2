@@ -31,6 +31,18 @@ public class scriptWallSpawner : MonoBehaviour
     {
     }
 
+    void InstantiateWall(Vector3 spawnPos, Quaternion spawnRot)
+    {
+        if (spawnCounter > maxSpawn)
+        {
+            spawnCounter = 0;
+        }
+
+        // Spawn a new wall in the same horizontal position as the current one, but just below the camera
+        Instantiate(spawnList[spawnCounter], spawnPos, spawnRot);
+        spawnCounter++;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Colliding with trigger");
@@ -44,14 +56,7 @@ public class scriptWallSpawner : MonoBehaviour
             Vector3 spawnPosition = currentWall.transform.position;
             spawnPosition.y = spawnPositionY;
 
-            if (spawnCounter > maxSpawn)
-            {
-                spawnCounter = 0;
-            }
-
-            // Spawn a new wall in the same horizontal position as the current one, but just below the camera
-            Instantiate(spawnList[spawnCounter], spawnPosition, currentWall.transform.rotation);
-            spawnCounter++;
+            InstantiateWall(spawnPosition, currentWall.transform.rotation);
         }
 
 

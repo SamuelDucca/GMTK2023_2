@@ -52,6 +52,7 @@ public class scriptLogicManager : MonoBehaviour
         isAlive = false;
         gameOverScreen.SetActive(true);
     }
+
     // Update is called once per frame
     void Update()
     {
