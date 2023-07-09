@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.Rendering;
 
 public class scriptLogicManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class scriptLogicManager : MonoBehaviour
     public bool isAlive = true;
     public float gameSpeed = 15;
     public float maxGameSpeed = 30;
+    public AudioSource musicSource;
+    public AudioSource deathSoundSource;
 
     public GameObject gameOverScreen;
     public float playerScore;
@@ -53,6 +56,11 @@ public class scriptLogicManager : MonoBehaviour
 
     public void GameOver()
     {
+        UpdateScoreText();
+
+        deathSoundSource.time = 0.5f;
+        deathSoundSource.Play();
+
         gameOverText.text = $"{(int)playerScore} people were safely evacuated.";
         evacuationText.text = "Evacuation Failed";
         isAlive = false;
@@ -75,6 +83,18 @@ public class scriptLogicManager : MonoBehaviour
             }
 
             ManageGameSpeed();
+        }
+        else
+        {
+            if (musicSource.isPlaying)
+            {
+                musicSource.volume -= Time.deltaTime;
+                if (musicSource.volume <= 0)
+                {
+                    musicSource.Stop();
+                }
+            }
+
         }
 
     }
