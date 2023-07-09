@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class scriptBlastDoor : MonoBehaviour
 {
+
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +22,12 @@ public class scriptBlastDoor : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Clicked on trapdoor!");
+
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+
         Animator animator = gameObject.GetComponent<Animator>();
         animator.SetBool("Is_Open", true);
         animator.speed = 2.0f;
