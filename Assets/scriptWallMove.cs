@@ -29,7 +29,7 @@ public class scriptWallMove : MonoBehaviour
     {
         if (reduceAudio)
         {
-            audioSource.volume -= Time.deltaTime;
+            audioSource.volume -= Time.deltaTime* 0.6f;
         }
         if (audioSource.volume <= 0)
         {
@@ -52,7 +52,7 @@ public class scriptWallMove : MonoBehaviour
                 if (!audioSource.isPlaying)
                 {
                     reduceAudio = false;
-                    audioSource.volume = 0.2f;
+                    audioSource.volume = 0.1f;
                     audioSource.time = 1;
                     audioSource.Play();
                 }
@@ -64,7 +64,7 @@ public class scriptWallMove : MonoBehaviour
                 if (!audioSource.isPlaying)
                 {
                     reduceAudio = false;
-                    audioSource.volume = 0.2f;
+                    audioSource.volume = 0.1f;
                     audioSource.time = 1;
                     audioSource.Play();
                 }
