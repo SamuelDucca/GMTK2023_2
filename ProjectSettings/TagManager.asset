@@ -14,7 +14,7 @@ TagManager:
   - Water
   - UI
   - BG Geral
-  - Bloom01
+  - 
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG_Space
+    uniqueID: 114509829
+    locked: 0
   - name: BG_Sky
     uniqueID: 573782327
     locked: 0
