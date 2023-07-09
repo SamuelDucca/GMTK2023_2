@@ -14,7 +14,7 @@ public class scriptChangeSceneOnClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.anyKeyDown)
         {
             Debug.Log("Changing scene");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -3238,19 +3238,19 @@ PrefabInstance:
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn6
       value: 
-      objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: 8a387eb735b7cdd4e95e89503e0849c7, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn7
       value: 
-      objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: 984251121b95e6f448839fe42d47aab5, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn8
       value: 
-      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: 8353880d800d5f343b301de8a68bf83c, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn9
       value: 
-      objectReference: {fileID: 4610995327424666768, guid: d242af41f9f44914d9cac539e790b6ba, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: 70e2e2afbf59c1846b7a01aba20bec29, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: disableRandom
       value: 0
@@ -3258,27 +3258,27 @@ PrefabInstance:
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn10
       value: 
-      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: a18466a1ebe2b6844bd23d0e958580f8, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn11
       value: 
-      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: 8a387eb735b7cdd4e95e89503e0849c7, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn12
       value: 
-      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: 984251121b95e6f448839fe42d47aab5, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn13
       value: 
-      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: 8353880d800d5f343b301de8a68bf83c, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn14
       value: 
-      objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: 70e2e2afbf59c1846b7a01aba20bec29, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn15
       value: 
-      objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
+      objectReference: {fileID: 4467366448016038511, guid: a18466a1ebe2b6844bd23d0e958580f8, type: 3}
     - target: {fileID: 4383514210035945119, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1

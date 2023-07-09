@@ -40,11 +40,19 @@ public class scriptLogicManager : MonoBehaviour
 
     public void ManageGameSpeed()
     {
-        if (playerScore > 200)
+        if (playerScore > 300)
+        {
+            gameSpeed = 12;
+        }
+        if (playerScore > 400)
         {
             gameSpeed = 15;
         }
-        if (playerScore > 500)
+        if (playerScore > 600)
+        {
+            gameSpeed = 18;
+        }
+        if (playerScore > 800)
         {
             gameSpeed = 20;
         }
