@@ -4,20 +4,26 @@ using UnityEngine;
 
 public class scriptWallSpawner : MonoBehaviour
 {
-    public GameObject wallToSpawn1, wallToSpawn2, wallToSpawn3, wallToSpawn4;
+    public GameObject wallToSpawn0, wallToSpawn1, wallToSpawn2, wallToSpawn3, wallToSpawn4, wallToSpawn5;
+    public scriptLogicManager logic;
+
     public float spawnPositionY = -25;
     private GameObject currentWall;
     private int spawnCounter = 0;
-    private int maxSpawn = 3;
+    private int maxSpawn = 5;
     private List<GameObject> spawnList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<scriptLogicManager>();
+        spawnList.Add(wallToSpawn0);
         spawnList.Add(wallToSpawn1);
         spawnList.Add(wallToSpawn2);
         spawnList.Add(wallToSpawn3);
         spawnList.Add(wallToSpawn4);
+        spawnList.Add(wallToSpawn5);
+
     }
 
     // Update is called once per frame
