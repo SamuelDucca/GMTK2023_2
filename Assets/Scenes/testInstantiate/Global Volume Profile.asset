@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
   m_Name: ShadowsMidtonesHighlights
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   shadows:
     m_OverrideState: 1
     m_Value: {x: 0.78164613, y: 0.9284754, z: 1, w: 0}
@@ -96,22 +96,22 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.86
+    m_Value: 0.75
   intensity:
     m_OverrideState: 1
-    m_Value: 0.86
+    m_Value: 2.4
   scatter:
     m_OverrideState: 1
-    m_Value: 0.286
+    m_Value: 0.43
   clamp:
     m_OverrideState: 0
-    m_Value: 332
+    m_Value: 0.48
   tint:
     m_OverrideState: 0
-    m_Value: {r: 1, g: 0, b: 0, a: 1}
+    m_Value: {r: 1, g: 0.4156863, b: 0, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   downscale:
     m_OverrideState: 0
     m_Value: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eb4b772797da9440885e8bd939e9560, type: 3}
   m_Name: ColorCurves
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   master:
     m_OverrideState: 1
     m_Value:
