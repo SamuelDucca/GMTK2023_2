@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class scriptLogicManager : MonoBehaviour
 {
@@ -14,7 +15,10 @@ public class scriptLogicManager : MonoBehaviour
     public GameObject gameOverScreen;
     public float playerScore;
     public float scoreMultiplier = 10f;
-    public Text scoreText;
+    //public Text scoreText;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI gameOverText;
+    public TextMeshProUGUI evacuationText;
 
     private float timer = 0;
     public float minUpdate = 0.1f;
@@ -23,7 +27,7 @@ public class scriptLogicManager : MonoBehaviour
 
     public void UpdateScoreText()
     {
-        scoreText.text = $"People evacuated: {(int)playerScore}";
+        scoreText.text = $"{(int)playerScore}";
     }
 
     public void RestartGame() 
@@ -49,6 +53,8 @@ public class scriptLogicManager : MonoBehaviour
 
     public void GameOver()
     {
+        gameOverText.text = $"{(int)playerScore} people were safely evacuated.";
+        evacuationText.text = "Evacuation Failed";
         isAlive = false;
         gameOverScreen.SetActive(true);
     }
