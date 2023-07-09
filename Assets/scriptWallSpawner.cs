@@ -14,6 +14,7 @@ public class scriptWallSpawner : MonoBehaviour
     private GameObject currentWall;
     private int spawnCounter = 0;
     private int maxSpawn = 15;
+    private int nextSpawn = 0;
     private List<GameObject> spawnList = new List<GameObject>();
 
     // Start is called before the first frame update
@@ -59,7 +60,34 @@ public class scriptWallSpawner : MonoBehaviour
         }
         else
         {
+            int currentSpawn = nextSpawn;
+            int randomValue = Random.Range(0, 100);
 
+            // We didn't spawn 0, so we need more chance to spawn it
+            if (currentSpawn > 0)
+            {
+                if (randomValue < 30)
+                {
+                    nextSpawn = 0;
+                }
+                else
+                {
+                    nextSpawn = Random.Range(1, maxSpawn);
+                }
+            }
+            else
+            {
+                if(randomValue < 40) 
+                {
+                    nextSpawn = Random.Range(0, 5);
+                }
+                else
+                {
+                    nextSpawn = Random.Range(1, maxSpawn);
+                }
+            }
+
+            Instantiate(spawnList[nextSpawn], spawnPos, spawnRot);
         }
 
     }

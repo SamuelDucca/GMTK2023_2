@@ -434,7 +434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &547702946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 538c560401a7a7b49933a45fa5f48e8d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.505
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1729,6 +1729,50 @@ PrefabInstance:
       objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn5
+      value: 
+      objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn6
+      value: 
+      objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn7
+      value: 
+      objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn8
+      value: 
+      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn9
+      value: 
+      objectReference: {fileID: 4610995327424666768, guid: d242af41f9f44914d9cac539e790b6ba, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: disableRandom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn10
+      value: 
+      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn11
+      value: 
+      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn12
+      value: 
+      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn13
+      value: 
+      objectReference: {fileID: 1197819473357058558, guid: c95a5bb0a7b09314dbbf22de23719f40, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn14
+      value: 
+      objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: wallToSpawn15
       value: 
       objectReference: {fileID: 5302205869545470694, guid: 5fe9f8a24cfa41e4499c54a44a508595, type: 3}
     - target: {fileID: 4383514210035945119, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
