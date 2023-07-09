@@ -15,11 +15,14 @@ public class BombScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //animator.speed = 1;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Animator animator = gameObject.GetComponent<Animator>();
+        animator.SetBool("Is_Crashed", true);
+
         logic.GameOver();
     }
 }

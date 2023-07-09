@@ -21,6 +21,7 @@ public class scriptBlastDoor : MonoBehaviour
         Debug.Log("Clicked on trapdoor!");
         Animator animator = gameObject.GetComponent<Animator>();
         animator.SetBool("Is_Open", true);
+        animator.speed = 2.0f;
         Collider2D[] colliders = gameObject.GetComponents<Collider2D>();
         colliders[0].enabled = false;
         colliders[1].enabled = false;
