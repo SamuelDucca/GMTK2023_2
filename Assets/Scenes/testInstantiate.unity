@@ -277,7 +277,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 947652764089246547, guid: 38b831b9a3ea118488ec36ce1f8c54a1, type: 3}
       propertyPath: m_Volume
-      value: 0.246
+      value: 0.191
       objectReference: {fileID: 0}
     - target: {fileID: 4609277690058831808, guid: 38b831b9a3ea118488ec36ce1f8c54a1, type: 3}
       propertyPath: m_RootOrder
@@ -1670,6 +1670,10 @@ PrefabInstance:
       propertyPath: wall
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
+      propertyPath: logic
+      value: 
+      objectReference: {fileID: 493626418}
     - target: {fileID: 3937079189951849414, guid: 3b5ebe0fc09b9924dafd0975eebc5edd, type: 3}
       propertyPath: wallToSpawn0
       value: 

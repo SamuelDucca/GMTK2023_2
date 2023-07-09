@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class scriptWallSpawner : MonoBehaviour
 {
-    public GameObject wallToSpawn0, wallToSpawn1, wallToSpawn2, wallToSpawn3, wallToSpawn4, wallToSpawn5;
+    public GameObject wallToSpawn0, wallToSpawn1, wallToSpawn2, wallToSpawn3, wallToSpawn4, wallToSpawn5, wallToSpawn6, wallToSpawn7,
+        wallToSpawn8, wallToSpawn9, wallToSpawn10, wallToSpawn11, wallToSpawn12, wallToSpawn13, wallToSpawn14, wallToSpawn15;
     public scriptLogicManager logic;
+
+    public bool disableRandom = true;
 
     public float spawnPositionY = -25;
     private GameObject currentWall;
     private int spawnCounter = 0;
-    private int maxSpawn = 5;
+    private int maxSpawn = 15;
     private List<GameObject> spawnList = new List<GameObject>();
 
     // Start is called before the first frame update
@@ -23,6 +26,16 @@ public class scriptWallSpawner : MonoBehaviour
         spawnList.Add(wallToSpawn3);
         spawnList.Add(wallToSpawn4);
         spawnList.Add(wallToSpawn5);
+        spawnList.Add(wallToSpawn6);
+        spawnList.Add(wallToSpawn7);
+        spawnList.Add(wallToSpawn8);
+        spawnList.Add(wallToSpawn9);
+        spawnList.Add(wallToSpawn10);
+        spawnList.Add(wallToSpawn11);
+        spawnList.Add(wallToSpawn12);
+        spawnList.Add(wallToSpawn13);
+        spawnList.Add(wallToSpawn14);
+        spawnList.Add(wallToSpawn15);
 
     }
 
@@ -33,14 +46,22 @@ public class scriptWallSpawner : MonoBehaviour
 
     void InstantiateWall(Vector3 spawnPos, Quaternion spawnRot)
     {
-        if (spawnCounter > maxSpawn)
+        if (disableRandom)
         {
-            spawnCounter = 0;
+            if (spawnCounter > maxSpawn)
+            {
+                spawnCounter = 0;
+            }
+
+            // Spawn a new wall in the same horizontal position as the current one, but just below the camera
+            Instantiate(spawnList[spawnCounter], spawnPos, spawnRot);
+            spawnCounter++;
+        }
+        else
+        {
+
         }
 
-        // Spawn a new wall in the same horizontal position as the current one, but just below the camera
-        Instantiate(spawnList[spawnCounter], spawnPos, spawnRot);
-        spawnCounter++;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
